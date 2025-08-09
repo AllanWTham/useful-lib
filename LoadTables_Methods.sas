@@ -11,8 +11,8 @@ The following code perform these tasks by loading to "CASUSER" caslib:
   - Method 4: Use PROC HTTP to load a CSV file (‘iris.csv’) hosted online
 */
 
-/* Create a cas session called 'mysess' with 30 mins timeout */
-cas mysess sessopts=(caslib=casuser timeout=1800 locale="en_US" metrics=True);
+/* Create a cas session called 'mysess' with 60 mins timeout */
+cas mysess sessopts=(caslib=casuser timeout=3600 locale="en_US" metrics=True);
 
 /* Assign the libref to 'CASUSER'.
    Note, that this allow traditional data steps to access CAS tables.
